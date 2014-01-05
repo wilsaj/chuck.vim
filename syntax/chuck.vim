@@ -26,10 +26,6 @@ syntax keyword chuckKeyword class extends public static pure this
 highlight link chuckKeyword Keyword
 
 
-syntax keyword chuckBuiltinUgen Phasor
-syntax keyword chuckBuiltinUgen SinOsc PulseOsc
-
-
 syntax keyword chuckOperator => @=> =^
 syntax keyword chuckOperator + - * /
 syntax keyword chuckOperator %
