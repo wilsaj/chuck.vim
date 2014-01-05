@@ -45,9 +45,9 @@ syntax keyword chuckType Object Event UGen
 highlight link chuckType Type
 
 
-syntax keyword chuckBuiltinUgen adc blackhole dac
-syntax keyword chuckBuiltinUgen Gain
-syntax keyword chuckBuiltinUgen Noise Impulse Step
+syntax keyword chuckBuiltinUGen adc blackhole dac
+syntax keyword chuckBuiltinUGen Gain
+syntax keyword chuckBuiltinUGen Noise Impulse Step
 syntax keyword chuckBuiltinUGen Phasor SinOsc PulseOsc SqrOsc TriOsc SawOsc
 syntax keyword chuckBuiltinUGen Gen5 Gen7 Gen9 Gen10 Gen17
 syntax keyword chuckBuiltinUGen CurveTable WarpTable
@@ -66,7 +66,7 @@ syntax keyword chuckBuiltinUGen Envelope ADSR
 syntax keyword chuckBuiltinUGen JCRev NRev PRCRev
 syntax keyword chuckBuiltinUGen Chorus Modulate PitShift SubNoise Blit BlitSaw BlitSquare
 syntax keyword chuckBuiltinUGen WvIn WaveLoop WvOut
-highlight link chuckBuiltinUgen Structure
+highlight link chuckBuiltinUGen Structure
 
 syntax keyword chuckBuiltinUAna UAna UAnaBlob Windowing
 syntax keyword chuckBuiltinUAna FFT IFFT DCT IDCT
