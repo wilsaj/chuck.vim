@@ -83,6 +83,8 @@ highlight link chuckNumber Number
 syntax match chuckFloat /\%(\i\|\$\)\@<![-]\?\%(\d*\.\d\+\|\d\+\.\)/ display
 highlight link chuckFloat Float
 
+syntax region chuckString start=/"/ end=/"/ display
+highlight link chuckString String
 
 let b:current_syntax = "chuck"
 
