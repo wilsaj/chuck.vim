@@ -40,10 +40,10 @@ syntax keyword chuckOperator ! + -
 syntax keyword chuckOperator <<< >>>
 highlight link chuckOperator Operator
 
-syntax keyword chuckRepeat while until for 
+syntax keyword chuckRepeat while until for
 highlight link chuckRepeat Repeat
 
-syntax keyword chuckType int float time dur void string 
+syntax keyword chuckType int float time dur void string
 syntax keyword chuckType array ugen complex polar
 syntax keyword chuckType Object Event UGen
 highlight link chuckType Type
@@ -73,7 +73,7 @@ syntax keyword chuckBuiltinUGen WvIn WaveLoop WvOut
 highlight link chuckBuiltinUgen Structure
 
 syntax keyword chuckBuiltinUAna UAna UAnaBlob Windowing
-syntax keyword chuckBuiltinUAna FFT IFFT DCT IDCT 
+syntax keyword chuckBuiltinUAna FFT IFFT DCT IDCT
 syntax keyword chuckBuiltinUAna Centroid Flux RMS RollOff
 highlight link chuckBuiltinUAna Structure
 
