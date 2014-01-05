@@ -77,10 +77,10 @@ syntax keyword chuckBuiltinUAna Centroid Flux RMS RollOff
 highlight link chuckBuiltinUAna Structure
 
 
-syn match chuckNumber /\%(\i\|\$\)\@<![-]\?\d\+/ display
+syntax match chuckNumber /\%(\i\|\$\)\@<![-]\?\d\+/ display
 highlight link chuckNumber Number
 
-syn match chuckFloat /\%(\i\|\$\)\@<![-]\?\%(\d*\.\d\+\|\d\+\.\)/ display
+syntax match chuckFloat /\%(\i\|\$\)\@<![-]\?\%(\d*\.\d\+\|\d\+\.\)/ display
 highlight link chuckFloat Float
 
 
