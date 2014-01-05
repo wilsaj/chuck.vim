@@ -37,6 +37,7 @@ syntax keyword chuckOperator "&&" "||" == != >=
 syntax keyword chuckOperator & + ^
 syntax keyword chuckOperator ++ --
 syntax keyword chuckOperator ! + -
+syntax keyword chuckOperator <<< >>>
 highlight link chuckOperator Operator
 
 syntax keyword chuckRepeat while until for 
