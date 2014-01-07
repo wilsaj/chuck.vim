@@ -79,6 +79,18 @@ syntax keyword chuckBuiltinUAna Flip pilF
 highlight link chuckBuiltinUAna Structure
 
 
+syntax keyword chuckEvent OscRecv OscSend OscEvent
+syntax keyword chuckEvent MidiIn MidiOut MidiMsg
+syntax keyword chuckEvent KBHit Hid HidMsg
+highlight link chuckEvent Special
+
+syntax keyword chuckIO Machine RegEx FileIO SerialIO StringTokenizer ConsoleInput
+highlight link chuckIO Special
+
+syntax keyword chuckLib Math Std
+highlight link chuckLib Special
+
+
 syntax match chuckNumber /\%(\i\|\$\)\@<![-]\?\d\+/ display
 highlight link chuckNumber Number
 
