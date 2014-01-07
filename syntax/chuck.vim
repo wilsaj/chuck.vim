@@ -66,6 +66,7 @@ syntax keyword chuckBuiltinUGen Envelope ADSR
 syntax keyword chuckBuiltinUGen JCRev NRev PRCRev
 syntax keyword chuckBuiltinUGen Chorus Modulate PitShift SubNoise Blit BlitSaw BlitSquare
 syntax keyword chuckBuiltinUGen WvIn WaveLoop WvOut
+syntax keyword chuckBuiltinUGen GenX LiSa Dyno
 highlight link chuckBuiltinUGen Structure
 
 syntax keyword chuckBuiltinUAna UAna UAnaBlob Windowing
