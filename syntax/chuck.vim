@@ -75,6 +75,7 @@ highlight link chuckBuiltinUGen Structure
 syntax keyword chuckBuiltinUAna UAna UAnaBlob Windowing
 syntax keyword chuckBuiltinUAna FFT IFFT DCT IDCT
 syntax keyword chuckBuiltinUAna Centroid Flux RMS RollOff
+syntax keyword chuckBuiltinUAna Flip pilF
 highlight link chuckBuiltinUAna Structure
 
 
