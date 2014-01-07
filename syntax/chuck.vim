@@ -23,6 +23,8 @@ syntax keyword chuckKeyword me
 syntax keyword chuckKeyword samp ms second minute hour day week
 syntax keyword chuckKeyword repeat break continue
 syntax keyword chuckKeyword class extends public static pure this
+syntax keyword chuckKeyword spork
+syntax keyword chuckKeyword cherr chout
 highlight link chuckKeyword Keyword
 
 
