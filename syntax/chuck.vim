@@ -48,7 +48,7 @@ highlight link chuckType Type
 syntax keyword chuckBuiltinUGen adc blackhole dac
 syntax keyword chuckBuiltinUGen Gain
 syntax keyword chuckBuiltinUGen Noise Impulse Step
-syntax keyword chuckBuiltinUGen Phasor SinOsc PulseOsc SqrOsc TriOsc SawOsc
+syntax keyword chuckBuiltinUGen Phasor Osc SinOsc PulseOsc SqrOsc TriOsc SawOsc
 syntax keyword chuckBuiltinUGen Gen5 Gen7 Gen9 Gen10 Gen17
 syntax keyword chuckBuiltinUGen CurveTable WarpTable
 syntax keyword chuckBuiltinUGen BiQuad OneZero TwoZero OnePole TwoPole PoleZero
@@ -67,6 +67,7 @@ syntax keyword chuckBuiltinUGen JCRev NRev PRCRev
 syntax keyword chuckBuiltinUGen Chorus Modulate PitShift SubNoise Blit BlitSaw BlitSquare
 syntax keyword chuckBuiltinUGen WvIn WaveLoop WvOut
 syntax keyword chuckBuiltinUGen GenX LiSa Dyno
+syntax keyword chuckBuiltinUGen Chugen Chubgraph
 highlight link chuckBuiltinUGen Structure
 
 syntax keyword chuckBuiltinUAna UAna UAnaBlob Windowing
