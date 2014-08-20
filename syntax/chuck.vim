@@ -38,7 +38,7 @@ syntax keyword chuckOperator ! + -
 syntax keyword chuckOperator <<< >>>
 highlight link chuckOperator Operator
 
-syntax keyword chuckRepeat while until for
+syntax keyword chuckRepeat while until for do
 highlight link chuckRepeat Repeat
 
 syntax keyword chuckType int float time dur void string
@@ -79,7 +79,7 @@ syntax keyword chuckBuiltinUAna Flip pilF
 highlight link chuckBuiltinUAna Structure
 
 
-syntax keyword chuckEvent OscRecv OscSend OscEvent
+syntax keyword chuckEvent OscRecv OscSend OscEvent OscOut OscIn
 syntax keyword chuckEvent MidiIn MidiOut MidiMsg
 syntax keyword chuckEvent KBHit Hid HidMsg
 highlight link chuckEvent Special
