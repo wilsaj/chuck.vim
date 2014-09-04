@@ -2,10 +2,9 @@ chuck.vim
 =========
 
 A vim plugin for [ChucK](http://chuck.stanford.edu/), a programming language for
-real-time sound synthesis and music creation.
+real-time sound synthesis and music creation. Currently supports syntax highlighting,
+though managing the Chuck VM (e.g. starting/stopping shreds) is a long-term goal.
 
-This is a work in progress! The main goal is to support managing the ChucK VM
-and starting/stopping shreds from vim.
 
 
 insallation
