@@ -8,8 +8,8 @@ This is a work in progress! The main goal is to support managing the ChucK VM
 and starting/stopping shreds from vim.
 
 
-insallation
------------
+installation
+------------
 
 This plugin is [vundle](https://github.com/gmarik/vundle) and
 [pathogen](https://github.com/tpope/vim-pathogen/) compatible. The simplest way
