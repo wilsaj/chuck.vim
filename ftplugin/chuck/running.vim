@@ -3,7 +3,11 @@ if !exists("g:chuck_command")
 endif
 
 function! ChuckRunBuffer()
-    silent !clear
+    if has("win32") || has("win16")
+        silent !cls
+    else
+        silent !clear
+    endif
     execute "!" . g:chuck_command . " " . bufname("%")
 endfunction
 
