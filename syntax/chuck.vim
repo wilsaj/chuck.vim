@@ -17,7 +17,7 @@ syntax keyword chuckKeyword fun function
 syntax keyword chuckKeyword return
 syntax keyword chuckKeyword const
 syntax keyword chuckKeyword new
-syntax keyword chuckKeyword now start
+syntax keyword chuckKeyword now
 syntax keyword chuckKeyword pi
 syntax keyword chuckKeyword me
 syntax keyword chuckKeyword samp ms second minute hour day week
@@ -78,8 +78,13 @@ syntax keyword chuckBuiltinUAna Centroid Flux RMS RollOff
 syntax keyword chuckBuiltinUAna Flip pilF
 highlight link chuckBuiltinUAna Structure
 
+syntax keyword chuckChugin ABSaturator AmbPan Bitcrusher Elliptic ExpDelay FIR
+syntax keyword chuckChugin FluidSynth GVerb KasFilter Ladspa MagicSine Mesh2D
+syntax keyword chuckChugin Multicomb Overdrive PanN PitchTrack PowerADSR Sigmund
+syntax keyword chuckChugin Spectacle WinFuncEnv
+highlight link chuckChugin Structure
 
-syntax keyword chuckEvent OscRecv OscSend OscEvent OscOut OscIn
+syntax keyword chuckEvent OscRecv OscSend OscEvent OscOut OscIn OscMsg
 syntax keyword chuckEvent MidiIn MidiOut MidiMsg
 syntax keyword chuckEvent KBHit Hid HidMsg
 highlight link chuckEvent Special
