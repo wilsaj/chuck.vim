@@ -2,23 +2,23 @@ if !exists("g:chuck_command")
     let g:chuck_command = "chuck"
 endif
 
-function! ChuckStartServer()
+function! ChuckServerStart()
     if exists("g:chuck_server_proc")
-        call ChuckStopServer()
+        call ChuckServerStop()
     endif
 
     let s:splitbelow = &splitbelow
     set splitbelow
-    split ChuckShell
+    new ChuckShell
     let &splitbelow  = s:splitbelow
     execute "set buftype=nofile"
-    let g:chuck_server_proc = vimproc#popen2("chuck --loop")
+    silent let g:chuck_server_proc = vimproc#popen2("chuck --loop")
     execute 'wincmd w'
 
-    echomsg ">>> Chuck server started"
+    "echo ">>> Chuck server started"
 endfunction
 
-function! ChuckProcRead()
+function! ChuckServerRead()
     if !exists("g:chuck_server_proc")
         return
     endif
@@ -45,10 +45,11 @@ function! ChuckProcRead()
 
     normal! zb
     put = chuck_stdout . chuck_stderr
+    execute 'normal dd'
     execute 'wincmd w'
 endfunction
 
-function! ChuckStopServer()
+function! ChuckServerStop()
     call vimproc#system("pkill chuck")
 
     if bufwinnr("ChuckShell") > 0
@@ -63,13 +64,18 @@ function! ChuckStopServer()
     echomsg ">>> Chuck server stopped"
 endfunction
 
-function! ChuckRunBuffer()
+function! ChuckBufferAdd()
     if !exists("g:chuck_server_proc")
-        call ChuckStartServer()
+        call ChuckServerStart()
     endif
     call vimproc#system_bg(g:chuck_command . " --add " . bufname("%"))
 endfunction
 
-nnoremap <buffer> <F5> :call ChuckRunBuffer()<cr>
-autocmd CursorHold,CursorHoldI * call ChuckProcRead()
+nnoremap <buffer> <F5> :call ChuckBufferAdd()<cr>
+" XXX send extra <cr> or there's "press Enter or type command to continue"
+" XXX echomsg is the cause of this
+"nnoremap <buffer> <F10> :call ChuckServerStart()<cr><cr>
+nnoremap <buffer> <F10> :call ChuckServerStart()<cr>
+nnoremap <buffer> <F11> :call ChuckServerStop()<cr>
+autocmd CursorHold,CursorHoldI * call ChuckServerRead()
 set updatetime=300
