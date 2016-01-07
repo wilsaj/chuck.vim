@@ -38,4 +38,16 @@ Then install using vundle inside vim.
 Or you can also copy the files manually to their corresponding directories in
 your `~/.vim/` directory if you're into the taste of awfulness.
 
+usage
+------------
 
+The following functions can be used to interact with the Chuck VM:
+
+Starting/resetting Chuck VM (bound to `<F10>`):
+`call ChuckServerStart()`
+
+Stopping Chuck VM (bound to `<F11>`):
+`call ChuckServerStop()`
+
+Adding the current chuck script (bound to `<F5>`):
+`call ChuckBufferAdd()`
