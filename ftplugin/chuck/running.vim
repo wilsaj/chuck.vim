@@ -46,7 +46,7 @@ function! ChuckServerRead()
     normal! zb
     put = chuck_stdout . chuck_stderr
     execute 'normal dd'
-    execute 'wincmd w'
+    execute 'wincmd p'
 endfunction
 
 function! ChuckServerStop()
