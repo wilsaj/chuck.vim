@@ -99,6 +99,9 @@ highlight link chuckLib Special
 syntax match chuckNumber /\%(\i\|\$\)\@<![-]\?\d\+/ display
 highlight link chuckNumber Number
 
+syntax match chuckHex /\<0[xX]\x\+[lL]\=\>/ display
+highlight link chuckHex Number
+
 syntax match chuckFloat /\%(\i\|\$\)\@<![-]\?\%(\d*\.\d\+\|\d\+\.\)/ display
 highlight link chuckFloat Float
 
